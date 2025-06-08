@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="flex-column vh-100">
+
+    <header class="flex-column text-center color-primary text-light">
+        <h1>To-Do List</h1>
+        <p>Keep your task orginized in this to-do list web page</p>
+
+        <div class="form-input pb-1 mx-auto">
+            <label for="taskQuery" class="text-end">Search: </label>
+            <input type="text" name="taskQuery" id="taskQuery" class="input">
+            <button class="btn-light" id="taskQueryButton">Search</button>
+        </div>
+    </header>
+
+    <main class="flex-stretch">
+        <section class="flex-column py-1 text-center" id="taskCreationSection">
+
+            <h2>Create a task:</h2>
+
+            <div class="form-input width-80 mx-auto py-1 pe-5">
+                <label for="taskName" class="text-end">Task: </label>
+                <input type="text" name="taskName" id="taskInput" class="input">
+            </div>
+
+            <button class="width-25 mx-auto btn-light" id="addTaskButton">Add</button>
+        </section>
+
+        <hr>
+
+        <section class="flex-column flex-center-items" id="taskList">
+
+        </section>
+    </main>
+
+    <footer class="flex-column color-primary text-light text-center">
+        <div class="flex-row flex-center-items">
+            <p class="pe-1">Total Tasks: </p>
+            <p id="taskCount">0</p>
+        </div>
+
+        <div class="flex-row flex-center-items">
+            <p class="pe-1">Task Completed: </p>
+            <p id="completedTaskCount">0</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
